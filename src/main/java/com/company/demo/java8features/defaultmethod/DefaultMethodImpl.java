@@ -1,4 +1,4 @@
-package com.company.demo.java8features.defaultMethod;
+package com.company.demo.java8features.defaultmethod;
 
 public class DefaultMethodImpl implements DefaultMethod {
 

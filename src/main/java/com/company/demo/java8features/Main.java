@@ -1,13 +1,13 @@
 package com.company.demo.java8features;
 
-import com.company.demo.java8features.defaultMethod.DefaultMethod;
-import com.company.demo.java8features.defaultMethod.DefaultMethodImpl;
+import com.company.demo.java8features.defaultmethod.DefaultMethod;
+import com.company.demo.java8features.defaultmethod.DefaultMethodImpl;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("*** START Default Methods ***");
+        System.out.println("***START Default Methods ***");
 
         DefaultMethod dm = new DefaultMethodImpl();
 
