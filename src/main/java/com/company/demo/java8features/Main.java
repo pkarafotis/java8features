@@ -1,28 +1,29 @@
 package com.company.demo.java8features;
 
-import com.company.demo.java8features.optionals.Optionals;
 import com.company.demo.java8features.dateapi.DateApi;
-
-import com.company.demo.java8features.methodreferences.MethodReferences;
-import com.company.demo.java8features.streams.StreamsDemo;
-
-import java.util.Arrays;
-import java.util.List;
+import com.company.demo.java8features.defaultmethod.DefaultMethod;
+import com.company.demo.java8features.defaultmethod.DefaultMethodImpl;
 import com.company.demo.java8features.functional.FunctionalWithArgs;
 import com.company.demo.java8features.functional.FunctionalWithGenerics;
 import com.company.demo.java8features.functional.SimpleFunctional;
 import com.company.demo.java8features.functional.SortStrings;
+import com.company.demo.java8features.methodreferences.MethodReferences;
+import com.company.demo.java8features.optionals.Optionals;
+import com.company.demo.java8features.streams.StreamsDemo;
+
+import java.util.Arrays;
+import java.util.List;
 
 
 public class Main {
 
     public static void main(String[] args) {
 
-//        System.out.println("***START Default Methods ***");
-//        DefaultMethod dm = new DefaultMethodImpl();
-//        System.out.println("Method implementation on class sum(5,10): " + dm.add(5, 10));
-//        System.out.println("Default Method implementation on interface avg(5,10): " + dm.avg(5, 10));
-//        System.out.println("*** END Default Methods ***\n\n");
+        System.out.println("***START Default Methods ***");
+        DefaultMethod dm = new DefaultMethodImpl();
+        System.out.println("Method implementation on class sum(5,10): " + dm.add(5, 10));
+        System.out.println("Default Method implementation on interface avg(5,10): " + dm.avg(5, 10));
+        System.out.println("*** END Default Methods ***\n\n");
 
         System.out.println("*** START Optionals***");
         Optionals.checkOptionalsWithoutContent();
