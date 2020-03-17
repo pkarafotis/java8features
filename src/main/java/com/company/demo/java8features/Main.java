@@ -5,6 +5,7 @@ import com.company.demo.java8features.defaultmethod.DefaultMethodImpl;
 import com.company.demo.java8features.optionals.Optionals;
 import com.company.demo.java8features.dateapi.DateApi;
 
+import com.company.demo.java8features.methodreferences.MethodReferences;
 
 public class Main {
 
@@ -12,14 +13,20 @@ public class Main {
 
         System.out.println("***START Default Methods ***");
         DefaultMethod dm = new DefaultMethodImpl();
-        System.out.println("Method implementation on class sum(5,10): " + dm.add(5,10));
-        System.out.println("Default Method implementation on interface avg(5,10): " + dm.avg(5,10));
+        System.out.println("Method implementation on class sum(5,10): " + dm.add(5, 10));
+        System.out.println("Default Method implementation on interface avg(5,10): " + dm.avg(5, 10));
         System.out.println("*** END Default Methods ***\n\n");
 
         System.out.println("*** START Optionals***");
         Optionals.checkOptionalsWithoutContent();
         Optionals.checkOptionalsWithContent();
         System.out.println("*** END Optionals***\n\n");
+
+        System.out.println("***START Method References ***");
+        MethodReferences.constructorDemo();
+        MethodReferences.staticMethodsDemo();
+        MethodReferences.instanceMethodDemo();
+        System.out.println("*** END Method References ***\n\n");
 
         System.out.println("***START Date API ***");
         DateApi.clock();
