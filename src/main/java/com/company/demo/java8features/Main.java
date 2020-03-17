@@ -1,9 +1,10 @@
 package com.company.demo.java8features;
 
-
 import com.company.demo.java8features.defaultmethod.DefaultMethod;
 import com.company.demo.java8features.defaultmethod.DefaultMethodImpl;
 import com.company.demo.java8features.optionals.Optionals;
+import com.company.demo.java8features.dateapi.DateApi;
+
 
 public class Main {
 
@@ -19,5 +20,13 @@ public class Main {
         Optionals.checkOptionalsWithoutContent();
         Optionals.checkOptionalsWithContent();
         System.out.println("*** END Optionals***\n\n");
+
+        System.out.println("***START Date API ***");
+        DateApi.clock();
+        DateApi.localDate();
+        DateApi.localTime();
+        DateApi.dateTimeFormat();
+        DateApi.zonedDateTime();
+        System.out.println("*** END Date API ***\n\n");
     }
 }
